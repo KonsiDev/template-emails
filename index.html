@@ -68,9 +68,9 @@
   </style>
   <style type="text/css">
     body {
-      background-color: #616161;
-      padding: 10px 0;
-      margin: 10px 0;
+      background-color: #f0f0f0;
+      padding: 0;
+      margin: 0;
       font-family: "Inter", Arial, Helvetica, sans-serif, 'Open Sans';
     }
 
@@ -272,8 +272,8 @@
             bgcolor="#ffffff">
             <tbody>
               <tr>
-                <td align="center"><a
-                    href="https://click.comunicacao.bancointer.com.br/?qs=73438fcab23ddfa2c714e18b7058acbbcb689a61026b9142648b0ae7bf51dcba02b3ae65c4c717a41e4383c76ec74964273b6a6186dc420eff025fc5d67e2f5a"
+                <td align="center"><a target="_blank"
+                    href="https://links.konsi.com.br/Download63Mf"
                     title="" data-linkto="http://">
                     <img data-assetid="143524"
                       src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ddbe3102-e006-458e-8615-61b587dad4cd/EMKT_HEADER_PRE_4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220517%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220517T193047Z&X-Amz-Expires=86400&X-Amz-Signature=38dcb0346fb71604c4a48716dd0bebb2da801f0df0cc29aaf4235c3f38b9cee8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22EMKT_HEADER_PRE_4.png%22&x-id=GetObject"
@@ -286,8 +286,8 @@
                       padding-left: 30px;
                       padding-right: 30px; padding-top: 30px; padding-bottom: 30px;">
                   <br />
-                  <h2 style="margin-bottom: 10px;">Olá,<span style="color: #141514"> Fulano! Como você está? 👀</span></h2>
-                  <p>Eu sou <strong>Vanessa</strong>, do <strong>Aplicativo Konsi</strong> e estou entrando em contato para trazer ótimas noticias! 😁</p>
+                  <h2 style="margin-bottom: 10px; color: #FFFFFF">Olá, {{first_name | fallback:"Cliente Konsi"}}! Como você está?👀</h2>
+                  <p style="color: #FFFFFF">Eu sou <strong style="font-weight: 600">Vanessa</strong>, do <strong style="font-weight: 600">Aplicativo Konsi</strong> e estou entrando em contato para trazer ótimas noticias! 😁</p>
                 </td>
               </tr>
               <tr>
@@ -295,7 +295,7 @@
                       padding-left: 30px;
                       padding-right: 30px; padding-top: 15px; padding-bottom: 0;">
                   <br />
-                  <p>Você tem a oportunidade de receber aproximadamente <strong>R$ 30.000,00</strong> na Konsi! 😎</p>
+                  <p>Você tem a oportunidade de receber aproximadamente <strong>R$ {{ custom_data.valor_liberado_credito_novo | fallback:"pelo menos 1000 reais" }},00</strong> na Konsi! 😎</p>
                   <p>Comparei mais de 15 bancos e encontrei a melhor taxa para você contratar seu consignado. E o melhor, receba em até <strong>24 horas úteis!</strong> 💰</p>
                   <p style="margin-bottom: 6px ;">Coisa boa é ter dinheiro no bolso, concorda!? 🧐 Para aproveitar essa oportunidade, é só clicar no botão que eu vou colocar logo aqui abaixo, certo? 👀</p>
                 </td>
@@ -303,9 +303,9 @@
               <tr>
                 <td align="center" class="container-padding" bgcolor="#ffffff" style="background-color: #FBFBFB;
                       padding-left: 30px;
-                      padding-right: 30px; padding-bottom: 30px;">
+                      padding-right: 30px; padding-bottom: 25px;">
                   <br />
-                  <a style="background-color: #0DC7A2;
+                  <a target="_blank" href="https://links.konsi.com.br/Download63Mf" style="background-color: #0DC7A2;
                   border-radius: 8px;
                   border: 1px solid rgba(0, 0, 0, 0.2);
                   color: #fff;
@@ -324,7 +324,7 @@
               <tr>
                 <td class="container-padding" bgcolor="#ffffff" style="background-color: #FFFFFF;
                       padding-left: 30px;
-                      padding-right: 30px; padding-top: 15px">
+                      padding-right: 30px;">
                   <br />
                   <p style="margin-bottom: 6px;">E caso tenha alguma dúvida, pode falar com o nosso <strong>Time de Atendimento!</strong> 😉👊. Para entrar em contato, é só clicar no botão abaixo, tudo bem? 👀</p>
                 </td>
@@ -334,7 +334,7 @@
                       padding-left: 30px;
                       padding-right: 30px; padding-bottom: 30px;">
                   <br />
-                  <a style="background-color: #0DC7A2;
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=5571994150640" style="background-color: #0DC7A2;
                   border-radius: 8px;
                   border: 1px solid rgba(0, 0, 0, 0.2);
                   color: #fff;
@@ -360,12 +360,12 @@
                     <tbody>
                       <tr>
                         <td style="width: 85px;"><img
-                            style="width: 80px; height: 80px; border-radius: 50%; padding: 0; border: none; box-shadow: none; margin: 0;"
-                            src="ssinha.png" alt=""></td>
+                            style="width: 70px; height: 70px; border-radius: 50%; padding: 0; border: none; box-shadow: none; margin: 0;"
+                            src="https://konsi.com.br/assets/img/vanessaTeixeira.png" alt=""></td>
                         <td>
                           <h2
                             style="top: 90px; color: #141514; font-weight: 600; font-size: 18px; margin: 10px 0 0 0; line-height: 28px">
-                            Vanessa, do Time Konsi 💚
+                            Vanessa, do Time Konsi ✨
                           </h2>
                           <h3
                             style="margin: 0 0 0 0; color: #616161; font-weight: 400; font-size: 14px; line-height: 28px">
@@ -384,10 +384,10 @@
                     <tbody>
                       <tr>
                         <td style="padding: 0; width: 40px; text-align: start; padding-left: 10px;">
-                          <img style="width: 100px; height: 35px; margin: 20px 0 10px 30px" src="logo_konsi.png" alt="logo konsi">
+                          <img style="width: 100px; height: 35px; margin: 20px 0 10px 30px" src="https://konsi.com.br/assets/img/logo_konsi.png" alt="logo konsi">
                         </td>
                         <td class="social" style="text-align: end; padding-right: 30px;">
-                          <a href="https://www.twitter.com/your-company-page">
+                          <a target="_blank" href="https://www.facebook.com/konsiaplicativo">
                             <svg width="11" height="23" viewBox="0 0 11 23" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -395,7 +395,7 @@
                                 fill="#0DC7A2" />
                             </svg>
                           </a>
-                          <a style="margin-left: 10px;" href="https://www.facebook.com/your-company-page">
+                          <a target="_blank" style="margin-left: 10px;" href="https://www.instagram.com/konsi.app/">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -403,12 +403,12 @@
                                 fill="#0DC7A2" />
                             </svg>
                           </a>
-                          <a style="margin-left: 10px;" href="https://www.facebook.com/your-company-page">
+                          <a target="_blank" style="margin-left: 10px;" href="https://www.youtube.com/channel/UCakkSbOkUNPxhwj04HqSbVw">
                             <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M27.8675 3.34613C27.543 2.14343 26.587 1.19621 25.3731 0.874763C23.1728 0.290649 14.35 0.290649 14.35 0.290649C14.35 0.290649 5.52723 0.290649 3.32691 0.874763C2.11302 1.19626 1.15697 2.14343 0.832482 3.34613C0.24292 5.52611 0.24292 10.0744 0.24292 10.0744C0.24292 10.0744 0.24292 14.6227 0.832482 16.8027C1.15697 18.0054 2.11302 18.9132 3.32691 19.2346C5.52723 19.8187 14.35 19.8187 14.35 19.8187C14.35 19.8187 23.1728 19.8187 25.3731 19.2346C26.587 18.9132 27.543 18.0054 27.8675 16.8027C28.4571 14.6227 28.4571 10.0744 28.4571 10.0744C28.4571 10.0744 28.4571 5.52611 27.8675 3.34613ZM11.4644 14.204V5.94489L18.8386 10.0745L11.4644 14.204Z" fill="#0DC7A2"/>
                               </svg>                              
                           </a>
-                          <a style="margin-left: 10px;" href="https://www.facebook.com/your-company-page">
+                          <a target="_blank" style="margin-left: 10px;" href="https://www.linkedin.com/company/konsi-app/">
                             <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M6.04703 22.1091V7.19196H1.19669V22.1091H6.04703ZM3.62249 5.15406C5.31388 5.15406 6.3667 4.00859 6.3667 2.57715C6.33518 1.11342 5.31395 -0.000244141 3.65458 -0.000244141C1.99548 -0.000244141 0.910522 1.11345 0.910522 2.57715C0.910522 4.00866 1.96308 5.15406 3.59082 5.15406H3.62233H3.62249ZM8.73167 22.1091H13.582V13.7786C13.582 13.3328 13.6135 12.8874 13.7416 12.5687C14.0922 11.678 14.8903 10.7554 16.2302 10.7554C17.9853 10.7554 18.6875 12.1233 18.6875 14.1286V22.109H23.5375V13.5556C23.5375 8.97368 21.1446 6.84175 17.9534 6.84175C15.3368 6.84175 14.188 8.33682 13.5497 9.35511H13.5821V7.19165H8.73178C8.79543 8.59139 8.73178 22.1088 8.73178 22.1088L8.73167 22.1091Z" fill="#0DC7A2"/>
                               </svg>
