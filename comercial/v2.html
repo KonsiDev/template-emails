@@ -7,8 +7,10 @@
   <meta name="format-detection" content="telephone=no" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <title>Email Template</title>
+  <title>Email Konsi</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+  </style>
   <style type="text/css" data-premailer="ignore">
     .ReadMsgBody {
       width: 100%;
@@ -167,7 +169,8 @@
       font-weight: 600;
       line-height: 22px;
       min-height: 20px;
-      padding: 16px 0px;
+      min-width: 200px;
+      padding: 16px 12px;
       text-decoration: none;
     }
 
@@ -202,6 +205,62 @@
       min-width: none !important;
     }
 
+    table.intercom-responsive-layout-table-author {
+      padding: 0;
+      width: 100%;
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      border-spacing: 0;
+      border-collapse: collapse;
+      border: none;
+    }
+
+    table.intercom-responsive-layout-table-author td {
+      word-wrap: break-word;
+      -moz-hyphens: auto;
+      hyphens: auto;
+      border-spacing: 0;
+      border-collapse: collapse;
+      border: none;
+      color: #525252;
+      font-size: 14px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    table.intercom-responsive-layout-table-author img {
+      border-radius: 50%;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      margin: 0;
+    }
+
+    table.intercom-responsive-layout-table-author h2 {
+      top: 90px;
+      color: #141514;
+      font-weight: 600;
+      font-size: 17px;
+      margin: 10px 0 0 0;
+      line-height: 28px;
+    }
+
+    table.intercom-responsive-layout-table-author h3 {
+      margin: 0 0 0 0;
+      color: #616161;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+    }
+
+    table.intercom-responsive-layout-table-author td.columns {
+      margin: 0 auto;
+      padding-left: 16px;
+      padding-bottom: 16px;
+      min-width: none !important;
+    }
+
     ul li,
     ol li {
       font-size: 14px;
@@ -221,15 +280,28 @@
       font-size: 12px;
     }
 
+    table.footer td.logokonsi {
+      text-align:start;
+      padding:0 0 0 10px;
+    }
+
+    table.footer td.logokonsi img {
+      margin: 20px 0 10px 30px
+    }
+
     table.footer td.social {
       width: 60%;
       line-height: 20px;
       border-left: none;
+      text-align: end;
+      padding-right: 20px;
+      padding-top: 10px;
     }
 
     table.footer td.social a {
       font-weight: bold;
       text-decoration: none;
+      padding-right: 15px;
     }
 
     table.footer td.social a.twitter {
@@ -254,10 +326,14 @@
 
     table.footer td.subscription {
       width: 40%;
+      text-align: end;
+      border-collapse:collapse;
+      padding-bottom: 5px;
     }
 
     table.footer td.subscription a {
-      color: #434343;
+      color: #757373;
+      
     }
   </style>
 </head>
@@ -276,7 +352,7 @@
                     href="https://links.konsi.com.br/Download63Mf"
                     title="" data-linkto="http://">
                     <img data-assetid="143524"
-                      src="https://konsi.com.br/assets/img/header_emkt_logo.png"
+                      src="https://konsi.com.br/assets/img/header_emkt.png"
                       alt="" width="960"
                       style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a>
                 </td>
@@ -291,84 +367,30 @@
                 </td>
               </tr>
               <tr>
-                <td class="container-padding" bgcolor="#ffffff" style="background-color: #FBFBFB;
-                      padding-left: 30px;
-                      padding-right: 30px; padding-top: 15px; padding-bottom: 0;">
-                  <br />
-                  <p>Você tem a oportunidade de receber aproximadamente <strong>R$ {{ custom_data.valor_liberado_credito_novo | fallback:"1000" }},00</strong> na Konsi! 😎</p>
-                  <p>Comparei mais de 15 bancos e encontrei a melhor taxa para você contratar seu consignado. E o melhor, receba em até <strong>24 horas úteis!</strong> 💰</p>
-                  <p style="margin-bottom: 6px ;">Coisa boa é ter dinheiro no bolso, concorda!? 🧐 Para aproveitar essa oportunidade, é só clicar no botão que eu vou colocar logo aqui abaixo, certo? 👀</p>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" class="container-padding" bgcolor="#ffffff" style="background-color: #FBFBFB;
-                      padding-left: 30px;
-                      padding-right: 30px; padding-bottom: 25px;">
-                  <br />
-                  <a target="_blank" href="https://links.konsi.com.br/Download63Mf" style="background-color: #0DC7A2;
-                  border-radius: 8px;
-                  border: 1px solid rgba(0, 0, 0, 0.2);
-                  color: #fff;
-                  display: flex;
-                  font-size: 18px;
-                  font-weight: 600;
-                  justify-content: center;
-                  align-items: center;
-                  width: 244px;
-                  height: 54px;
-                  line-height: 22px;
-                  padding: 2px 16px;
-                  text-decoration: none;">Aproveitar Oportunidade</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="container-padding" bgcolor="#ffffff" style="background-color: #FFFFFF;
+                <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff;
                       padding-left: 30px;
                       padding-right: 30px;">
                   <br />
-                  <p style="margin-bottom: 6px;">E caso tenha alguma dúvida, pode falar com o nosso <strong>Time de Atendimento!</strong> 😉👊. Para entrar em contato, é só clicar no botão abaixo, tudo bem? 👀</p>
+                  <!-- ### BEGIN CONTENT ### -->
+                  {{ content }}
+                  <!-- ### END CONTENT ### -->
                 </td>
-              </tr>
               <tr>
-                <td align="center" class="container-padding" bgcolor="#ffffff" style="background-color: #fbfbfb;
+                <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff;
                       padding-left: 30px;
-                      padding-right: 30px; padding-bottom: 30px;">
-                  <br />
-                  <a target="_blank" href="https://api.whatsapp.com/send?phone=5571994150640" style="background-color: #0DC7A2;
-                  border-radius: 8px;
-                  border: 1px solid rgba(0, 0, 0, 0.2);
-                  color: #fff;
-                  display: flex;
-                  font-size: 18px;
-                  font-weight: 600;
-                  justify-content: center;
-                  align-items: center;
-                  width: 244px;
-                  height: 54px;
-                  line-height: 22px;
-                  padding: 2px 16px;
-                  text-decoration: none;">Falar com a Konsi</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="container-padding" bgcolor="#ffffff" style="background-color: #FFF;
-                      padding-left: 30px;
-                      padding-right: 30px; padding-top: 15px; padding-bottom: 30px;">
+                      padding-right: 30px;">
 
                   <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#FFF"
-                    class="intercom-responsive-layout-table">
+                    class="intercom-responsive-layout-table-author">
                     <tbody>
                       <tr>
-                        <td style="width: 85px;"><img
-                            style="width: 70px; height: 70px; border-radius: 50%; padding: 0; border: none; box-shadow: none; margin: 0;"
-                            src="https://konsi.com.br/assets/img/vanessaTeixeira.png" alt=""></td>
+                        <td width="85px"><img width="70px" height="70px"
+                            src="https://konsi.com.br/assets/img/vanessaTeixeira.png" alt="autor do email"></td>
                         <td>
-                          <h2
-                            style="top: 90px; color: #141514; font-weight: 600; font-size: 18px; margin: 10px 0 0 0; line-height: 28px">
+                          <h2>
                             Vanessa, do Time Konsi ✨
                           </h2>
-                          <h3
-                            style="margin: 0 0 0 0; color: #616161; font-weight: 400; font-size: 14px; line-height: 28px">
+                          <h3>
                             Customer
                             Sucess</h3>
                         </td>
@@ -383,28 +405,30 @@
                     class="footer">
                     <tbody>
                       <tr>
-                        <td style="padding: 0; width: 40px; text-align: start; padding-left: 10px;">
-                          <img style="width: 100px; height: 35px; margin: 20px 0 10px 30px" src="https://konsi.com.br/assets/img/logo_konsi.png" alt="logo konsi">
+                        <td class="logokonsi" width="40px">
+                          <img width="100px" height="35px" src="https://konsi.com.br/assets/img/logo_konsi.png" alt="logo konsi">
                         </td>
-                        <td class="social" style="text-align: end; padding-right: 30px;">
+                        <td class="social">
                           <a target="_blank" href="https://www.facebook.com/konsiaplicativo">
                             <img width="11" height="23" src="https://konsi.com.br/assets/img/fb.png" alt="facebook">
                           </a>
-                          <a target="_blank" style="margin-left: 10px;" href="https://www.instagram.com/konsi.app/">
+                          <a target="_blank" href="https://www.instagram.com/konsi.app/">
                             <img width="20" height="21" src="https://konsi.com.br/assets/img/ig.png" alt="instagram">
                           </a>
-                          <a target="_blank" style="margin-left: 10px;" href="https://www.youtube.com/channel/UCakkSbOkUNPxhwj04HqSbVw">
+                          <a target="_blank" href="https://www.youtube.com/channel/UCakkSbOkUNPxhwj04HqSbVw">
                             <img width="29" height="20" src="https://konsi.com.br/assets/img/yt.png" alt="youtube">                              
                           </a>
-                          <a target="_blank" style="margin-left: 10px;" href="https://www.linkedin.com/company/konsi-app/">
+                          <a target="_blank" href="https://www.linkedin.com/company/konsi-app/">
                             <img width="24" height="23" src="https://konsi.com.br/assets/img/in.png" alt="linkedin">
                           </a>
                         </td>
                       </tr>
-                      <tr>
-                        <td class="subscription" style="text-align: center; border-collapse:collapse; padding-bottom: 5px;">{{ unsubscribe_link }}</td>
-                      </tr>
                     </tbody>
+                    <tfoot>
+                      <tr>
+                        <td class="subscription"> {{ unsubscribe_link }}</td>
+                      </tr>
+                    </tfoot>
                   </table>
                 </td>
               </tr>
