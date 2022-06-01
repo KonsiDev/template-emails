@@ -1,4 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
@@ -44,8 +47,6 @@
       border-collapse: collapse;
     }
 
-    
-
     .yshortcuts a {
       border-bottom: none !important;
     }
@@ -66,16 +67,12 @@
     }
   </style>
   <style type="text/css">
+
     body {
       background-color: #f0f0f0;
       padding: 0;
       margin: 0;
       font-family: "Inter", Arial, Helvetica, sans-serif, 'Open Sans';
-    }
-
-    img.an1 {
-      padding: 0;
-      margin: 0;
     }
 
     table.container {
@@ -155,10 +152,9 @@
     }
 
     td.container-padding img {
-      border: 1px solid #ddd;
-      padding: 37px;
-      margin: 0 19px;
-      box-shadow: 0 0 3px #ddd;
+      border: none;
+      padding: 0;
+      margin: 0;
     }
 
     td.container-padding {
@@ -287,8 +283,8 @@
     }
 
     table.footer td.logokonsi {
-      text-align:start;
-      padding:0 0 0 10px;
+      text-align: start;
+      padding: 0 0 0 10px;
     }
 
     table.footer td.logokonsi img {
@@ -333,17 +329,14 @@
     table.footer td.subscription {
       width: 40%;
       text-align: end;
-      border-collapse:collapse;
+      border-collapse: collapse;
       padding-bottom: 5px;
     }
 
     table.footer td.subscription a {
       color: #757373;
-      
+
     }
-
-    
-
   </style>
 </head>
 
@@ -357,7 +350,9 @@
             <tbody>
               <tr>
                 <td align="center"><a target="_blank" href="https://links.konsi.com.br/Download63Mf" title="">
-                    <img src="https://konsi.com.br/assets/img/emkt_header_2.png" alt="fique por dentro da konsi!" width="960" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a>
+                    <img src="https://konsi.com.br/assets/img/header_emkt.png" alt="fique por dentro da konsi!"
+                      width="960"
+                      style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a>
                 </td>
               </tr>
               <tr>
@@ -365,12 +360,16 @@
                       padding-left: 30px;
                       padding-right: 30px; padding-top: 30px; padding-bottom: 30px;">
                   <br>
-                  <h2 style="margin-bottom: 10px; color: #FFFFFF">Olá, {{first_name | fallback:"Cliente Konsi"}}! Como você está?👀</h2>
-                  <p style="color: #FFFFFF">Eu sou <strong style="font-weight: 600">Vanessa</strong>, do <strong style="font-weight: 600">Aplicativo Konsi</strong> e estou entrando em contato para trazer ótimas noticias! 😁</p>
+                  <h2 style="margin-bottom: 10px; color: #FFFFFF">Olá, {{first_name | fallback:"Cliente Konsi"}}! Como
+                    você está?👀</h2>
+                  <p style="color: #FFFFFF">Eu sou <strong style="font-weight: 600">Vanessa</strong>, do <strong
+                      style="font-weight: 600">Aplicativo Konsi</strong> e estou entrando em contato para trazer ótimas
+                    noticias! 😁</p>
                 </td>
-              </tr>
+              </tr>1111111
               <tr>
-                <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px;">
+                <td class="container-padding" bgcolor="#ffffff"
+                  style="background-color: #ffffff; padding-left: 30px; padding-right: 30px;">
                   <br>
                   <!-- ### BEGIN CONTENT ### -->
                   {{ content }}
@@ -382,10 +381,12 @@
                       padding-left: 30px;
                       padding-right: 30px;">
 
-                  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#FFF" class="intercom-responsive-layout-table-author">
+                  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#FFF"
+                    class="intercom-responsive-layout-table-author">
                     <tbody>
                       <tr>
-                        <td width="85px"><img width="70px" height="70px" src="https://konsi.com.br/assets/img/vanessaTeixeira.png" alt="autor do email"></td>
+                        <td width="85px"><img width="70px" height="70px"
+                            src="https://konsi.com.br/assets/img/vanessaTeixeira.png" alt="autor do email"></td>
                         <td>
                           <h2>
                             Vanessa, do Time Konsi ✨
@@ -401,11 +402,13 @@
               </tr>
               <tr>
                 <td>
-                  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#141514" class="footer">
+                  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#141514"
+                    class="footer">
                     <tbody>
                       <tr>
                         <td class="logokonsi" width="40px">
-                          <img width="100px" height="35px" src="https://konsi.com.br/assets/img/logo_konsi.png" alt="logo konsi">
+                          <img width="100px" height="35px" src="https://konsi.com.br/assets/img/logo_konsi.png"
+                            alt="logo konsi">
                         </td>
                         <td class="social">
                           <a target="_blank" href="https://www.facebook.com/konsiaplicativo">
@@ -415,7 +418,7 @@
                             <img width="20" height="21" src="https://konsi.com.br/assets/img/ig.png" alt="instagram">
                           </a>
                           <a target="_blank" href="https://www.youtube.com/channel/UCakkSbOkUNPxhwj04HqSbVw">
-                            <img width="29" height="20" src="https://konsi.com.br/assets/img/yt.png" alt="youtube">                              
+                            <img width="29" height="20" src="https://konsi.com.br/assets/img/yt.png" alt="youtube">
                           </a>
                           <a target="_blank" href="https://www.linkedin.com/company/konsi-app/">
                             <img width="24" height="23" src="https://konsi.com.br/assets/img/in.png" alt="linkedin">
@@ -442,4 +445,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
