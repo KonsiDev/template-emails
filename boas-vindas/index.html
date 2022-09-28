@@ -2,7 +2,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <title>Email Konsi</title>
+  <title>Alerta de novo integrante! 🚀</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
   </style>
@@ -157,6 +157,10 @@
     td.container-padding {
       padding-bottom: 20px;
     }
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+    }
 
     a.intercom-h2b-button {
       background-color: #0DC7A2;
@@ -171,6 +175,7 @@
       min-width: 200px;
       padding: 16px 12px;
       text-decoration: none;
+      text-align: center;
     }
 
     table.intercom-responsive-layout-table {
@@ -269,7 +274,6 @@
     table.footer {
       border-top: 1px solid #efefef;
       width: 100%;
-      height: 69px;
     }
 
     table.footer td {
@@ -281,7 +285,7 @@
 
     table.footer td.logokonsi {
       text-align:start;
-      padding:0 0 0 10px;
+      padding:0 10px 0 10px;
     }
 
     table.footer td.logokonsi img {
@@ -290,11 +294,28 @@
 
     table.footer td.social {
       width: 60%;
-      line-height: 20px;
+      margin-right: 10px;
+      line-height: 40px;
       border-left: none;
       text-align: end;
       padding-right: 20px;
       padding-top: 10px;
+      
+    }
+    @media screen and (max-width: 350px),
+    screen and (max-device-width: 350px) {
+      table.footer td.social {
+        display: grid;
+        padding-right: 5px;
+        padding-left: 15px;
+        margin-right: 3px;
+        grid-template-columns: 35px 35px;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
     }
 
     table.footer td.social a {
@@ -347,7 +368,7 @@
             <tbody>
               <tr>
                 <td align="center"><a target="_blank" href="https://links.konsi.com.br/Download63Mf" title="">
-                    <img src="https://konsi.com.br/assets/img/Konsi_Socios_cortado.png" alt="fique por dentro da konsi!" width="960" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a>
+                    <img src="https://tradetecnologia.github.io/template-emails/boas-vindas/header.png" alt="fique por dentro da konsi!" width="960" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a>
                 </td>
               </tr>
               <tr>
@@ -355,16 +376,22 @@
                       padding-left: 30px;
                       padding-right: 30px; padding-top: 30px; padding-bottom: 30px;">
                   <br>
-                  <h2 style="margin-bottom: 10px; color: #FFFFFF">Olá, {{first_name | fallback:"Cliente Konsi"}}! Como você está?👀</h2>
-                  <p style="color: #FFFFFF">Lembra de mim? Sou eu, <strong style="font-weight: 600">Vanessa</strong>, do <strong style="font-weight: 600">Aplicativo Konsi</strong>! 😁</p>
+                  <h2 style="margin-bottom: 10px; color: #FFFFFF">Olá, {{first_name | fallback:"Cliente Konsi"}}! Eu sou a Vanessa. Seja bem vindo ao nosso aplicativo!</h2>
                 </td>
               </tr>
               <tr>
                 <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px;">
                   <br>
-                  <!-- ### BEGIN CONTENT ### -->
-                  {{ content }}
-                  <!-- ### END CONTENT ### -->
+                  <p>Sabe aquele problema de pegar filas, lidar com as burocracias dos bancos e sair de casa para ter acesso as melhores taxas e oportunidades do mercado?</p>
+                  <p>Com o aplicativo da Konsi você pode comparar as suas oportunidades de Crédito Consignado em mais de 15 bancos na palma da sua mão!</p>
+                  <p>Temos mais de 6 anos de história. Somos o único comparador de crédito consignado do mercado. Aqui, você decide o que é melhor para você, sem pressão e sem centenas de ligações por dia!</p>
+                  <p>Para fazer uma simulação, é só acessar a página de Oportunidades do app e clicar em uma das operações que estão disponíveis para você! 📲</p>
+                  <p>Quer consultar agora mesmo? É só clicar no botão que eu vou colocar abaixo, OK?</p>
+                  <br>
+                  <div class="buttonContainer">
+                    <a class="intercom-h2b-button" href="https://links.konsi.com.br/emailKonsi" target="_blank">Consultar Oportunidades</a>
+                  </div>
+                  
                 </td>
               </tr>
               <tr>
@@ -395,8 +422,11 @@
                     <tbody>
                       <tr>
                         <td class="logokonsi" width="40px">
-                          <img width="100px" height="35px" src="https://konsi.com.br/assets/img/logo_konsi.png" alt="logo konsi">
+                          <a target="_blank" href="https://konsi.com.br/">
+                            <img width="100px" height="35px" src="https://konsi.com.br/assets/img/logo_konsi.png" alt="logo konsi">
+                          </a>
                         </td>
+                        
                         <td class="social">
                           <a target="_blank" href="https://www.facebook.com/konsiaplicativo">
                             <img width="11" height="23" src="https://konsi.com.br/assets/img/fb.png" alt="facebook">
